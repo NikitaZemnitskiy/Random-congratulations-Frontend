@@ -1,0 +1,25 @@
+<div class="blockWithCongratulations">
+  <h2 class="textRules">Правила очень простые. Оставь два поздравления с новым годом и получи поздравление от
+    незнакомца!</h2>
+  <div class="flex justify-center">
+    <button *ngIf="isBothMessageSend && !isMessageAlreadyReceived" class="btnForCongrat"
+            (click)="getMessage()">
+      Получить поздравление
+    </button>
+  </div>
+  <div *ngIf="isBothMessageSend">
+    <h2 class="mb-2  text-lg text-center displayedMsg displayedMsg-1">{{currentMessage.user}}</h2>
+    <h2 class="mb-2  text-lg text-center displayedMsg">{{currentMessage.text}}</h2>
+  </div>
+  <div *ngIf="!isBothMessageSend" class="flex justify-center inputsForCongrat">
+    <input type="text" placeholder="Enter your text 1" class="inputForCongrat" #text1>
+    <input type="text" placeholder="Enter your text 2" class="inputForCongrat" #text2>
+    <h2 *ngIf="currentError" class="mb-2  text-lg warn">Введите 2 поздравления</h2>
+    <button class="left-1 btnForCongrat"
+            (click)="sendMessages(text1.value,text2.value)">
+      Отправить поздравления
+    </button>
+  </div>
+</div>
+
+<!--mb-2  text-lg text-center for H2-->

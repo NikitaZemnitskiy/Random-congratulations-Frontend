@@ -1,0 +1,128 @@
+.blockWithCongratulations {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.textRules {
+  cursor: default;
+  text-align: center;
+  max-width: 700px;
+  width: 100%;
+  margin-bottom: 25px;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 22px;
+  color: #8c272e;
+}
+
+.inputsForCongrat {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.inputForCongrat {
+  width: 550px;
+  padding: 10px;
+  margin-bottom: 15px;
+  background-image: linear-gradient(90deg, #c3eaf3, #e3f5f9);
+  outline: none;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  border: 2px solid #ff3f53;
+}
+
+.inputForCongrat::placeholder {
+  color: #4d6d75;
+}
+
+.inputForCongrat:focus {
+  color: #3d5156;
+  background-color: #fff;
+  border-color: #d2f1f7;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgb(255, 175, 182);
+}
+
+.btnForCongrat {
+  display: inline-block;
+  padding: 10px 50px;
+  color: #686565;
+  border: 1px solid rgba(255, 255, 255, .4);
+  background: none;
+  position: relative;
+  left: -1px;
+  transition: color 1.1s;
+}
+
+.btnForCongrat:hover {
+  color: #b4353e;
+}
+
+.btnForCongrat:before, .btnForCongrat:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  box-sizing: border-box;
+
+}
+
+.btnForCongrat:before {
+  bottom: 0;
+  left: 0;
+  border-left: 2px solid #f96978;
+  border-top: 2px solid #f96978;
+  transition: 0.2s ease opacity .8s, .2s ease width .4s, .2s ease height .6s;
+}
+
+.btnForCongrat:after {
+  top: 0;
+  right: 0;
+  border-right: 2px solid #f96978;
+  border-bottom: 2px solid #f96978;
+  transition: 0.2s ease opacity .4s, .2s ease width, .2s ease height .2s;
+}
+
+.btnForCongrat:hover:before,
+.btnForCongrat:hover:after {
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+}
+
+.btnForCongrat:hover:before {
+  transition: 0s ease opacity 0s, .2s ease height, .2s ease width .2s;
+}
+
+.btnForCongrat:hover:after {
+  transition: 0s ease opacity .4s, .2s ease height .4s, .2s ease width .6s;
+}
+
+.btnForCongrat:hover {
+  background: rgba(255, 255, 255, .2);
+}
+
+.displayedMsg {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #b4353e;
+  cursor: default;
+}
+
+
+.displayedMsg-1 {
+  color: #4242ff;
+  padding: 0 50px 10px;
+  border-bottom: 2px solid #a7a7a7;
+}
+
+.warn {
+  color: #fa4a4a;
+  font-size: 18px;
+  font-weight: 600;
+}

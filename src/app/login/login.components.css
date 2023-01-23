@@ -1,0 +1,49 @@
+.inputNameAndBtn {
+  padding: 25px;
+  margin: 25px 0;
+  min-width: 550px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.inputName {
+  background: linear-gradient(120deg, #94edfa, #d2f1f7);
+  width: 350px;
+  padding: 10px 20px;
+  border: 2px solid #fff;
+  outline: none;
+  font-size: 26px;
+  cursor: pointer;
+}
+.inputName::placeholder {
+  font-weight: bold;
+  opacity: 0.5;
+  color: #03454f;
+}
+.inputName:focus {
+  color: rgba(3, 69, 79, 1);
+  background-color: #fff;
+  border-color: #d2f1f7;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgb(210, 241, 247);
+}
+
+.btnLogin {
+  padding: 0px 20px .15em;
+  color: rgb(1, 109, 120);
+  font-weight: 700;
+  font-size: 26px;
+
+  --c:linear-gradient(#fefefe 0 0); /* update the color here */
+  background: var(--c), var(--c);
+  background-size: .3em .1em;
+  background-position:50% 100%;
+  background-repeat: no-repeat;
+  transition: .3s linear, background-size .3s .2s linear;
+}
+
+.btnLogin:hover {
+  background-size: 40% .1em;
+  background-position: 10% 100%, 90% 100%;
+}
+

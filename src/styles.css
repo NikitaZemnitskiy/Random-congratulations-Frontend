@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-image: url("https://img.freepik.com/free-photo/boxes-with-gifts-and-christmas-decorations-on-blue-surface_127032-2004.jpg?w=2000");
+  background-size: cover;
+  color: #434242;
+}
